@@ -1,13 +1,17 @@
-#ifndef libft
-#define libft
+#include	<stddef.h>
 
-#include <stddef.h>
+#ifndef	libft
+#define	libft
 
-int ft_tolower(int c);
+void	*ft_memcpy(void *dst, const void *src, size_t num);
 
-int ft_toupper(int c);
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
-void *ft_memset(void *ptr, int value, size_t num);
+int	ft_tolower(int c);
+
+int	ft_toupper(int c);
+
+void	*ft_memset(void *ptr, int value, size_t num);
 
 size_t ft_strlcat(char *dst, const char *src, size_t size);
 
