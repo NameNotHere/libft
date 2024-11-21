@@ -1,26 +1,52 @@
-#include <stddef.h>  // For size_t
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   memmoveREWRITE.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/20 17:49:36 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/21 15:14:17 by otanovic         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void *ft_memmove(void *dest, const void *src, size_t num) {
-    // Create char pointers for byte-by-byte copying
-    unsigned char *d = (unsigned char *)dest;
-    const unsigned char *s = (const unsigned char *)src;
-    
-    if (d == s) {
-        return dest;  // If source and destination are the same, no action needed
-    }
-    
-    // Handle overlapping memory: copy from end to start or from start to end
-    if (d < s || d >= s + num) {
-        // No overlap or destination is completely after the source
-        for (size_t i = 0; i < num; i++) {
-            d[i] = s[i];
-        }
-    } else {
-        // Overlapping regions, copy from the end to avoid overwriting data
-        for (size_t i = num; i > 0; i--) {
-            d[i - 1] = s[i - 1];
-        }
-    }
-    
-    return dest;
+#include <stddef.h>
+#include <stdio.h>
+
+void
+	*ft_memmove(
+			void *dest,
+			const void *src,
+			size_t num
+			)
+{
+	unsigned char *d;
+	unsigned char *s;
+	int i;
+
+	if (dest == src || num == 0)
+	{
+		return (dest);
+	}
+	s = (unsigned char *)src;
+	d = (unsigned char *)dest;
+	i = num;
+	if (d < s)
+	{
+		while (i > 0)
+		{
+			d[i - 1] = s[i - 1];
+			i--;
+		}
+	}
+	else
+	{
+		i = 0;
+		while (i < num)
+		{
+			d[i] = s[i];
+			i++;
+		}
+	}
+	return (d);
 }

@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   memcpy.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/21 16:58:24 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/21 17:17:28 by otanovic         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stddef.h>
 
-void *ft_memcpy(void *dst, const void *src, size_t num)
+void	*ft_memcpy(void *dst, const void *src, size_t num)
 {
-	size_t i;
-	unsigned char *ptr;
-	const unsigned char *s;
+	unsigned char	*ptr;
+	const unsigned char	*s;
+	size_t	i;
 
 	i = 0;
 	s = (const unsigned char *)src;
@@ -14,6 +26,5 @@ void *ft_memcpy(void *dst, const void *src, size_t num)
 		ptr[i] = s[i];
 		i++;
 	}
-
-	return dst;
+	return (dst);
 }

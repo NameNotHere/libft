@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   strlcat.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/21 16:58:38 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/21 17:17:36 by otanovic         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stddef.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
@@ -8,9 +20,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	i = 0;
 	j = 0;
 	while (dst[i] != '\0' && i < size)
-	{
 		i++;
-	}
 	if (i == size)
 	{
 		i = 0;
