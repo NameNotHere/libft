@@ -1,32 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/21 16:56:45 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/22 11:54:32 by otanovic         ###   ########.fr       */
+/*   Created: 2024/11/22 11:39:39 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/22 11:54:13 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-void	*ft_calloc(size_t num_elements, size_t size_of_element)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned char	*c;
-	size_t			i;
+	char	*new;
+	int		i;
+	int		j;
 
 	i = 0;
-	if (num_elements == 0 || size_of_element == 0)
-		return (NULL);
-	c = (unsigned char *)malloc(num_elements * size_of_element);
-	if (c == NULL)
-		return (NULL);
-	while (i < num_elements * size_of_element)
+	j = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[j] != '\0')
+		j++;
+	new = (unsigned char *) malloc(j + i + 1);
+	i = 0;
+	j = 0;
+	while (s1[i] != '\0')
 	{
-		c[i] = 0;
+		new[i] = s1[i];
 		i++;
 	}
-	return ((void *)c);
+	while (s2[j] != '\0')
+	{
+		new[i + j] = s2[j];
+		j++;
+	}
+	new[i] = '\0';
+	return (new);
 }
