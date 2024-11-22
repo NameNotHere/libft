@@ -6,15 +6,15 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:56:38 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 16:56:40 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/21 17:18:47 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	atoi(const char *s)
 {
-	int 	i;
+	int	i;
 	int	num;
-	int sign;
+	int	sign;
 
 	sign = 1;
 	i = 0;
