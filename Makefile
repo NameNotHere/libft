@@ -6,7 +6,7 @@
 #    By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/21 17:16:14 by otanovic          #+#    #+#              #
-#    Updated: 2024/11/21 17:17:30 by otanovic         ###   ########.fr        #
+#    Updated: 2024/11/23 16:23:03 by otanovic         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ $(NAME): $(OBJ)
 	ar -rcs $@ $(OBJ)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ -I .
 
 clean:
 	rm -f $(OBJ)

@@ -6,14 +6,14 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:49:36 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/22 11:32:25 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/23 16:23:01 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdio.h>
 
-void *ft_memmove(void *dest,const void *src,size_t num)
+void	*ft_memmove(void *dest, const void *src, size_t num)
 {
 	unsigned char	*d;
 	unsigned char	*s;
