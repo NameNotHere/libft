@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 15:16:08 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/23 16:22:43 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 15:54:42 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ char c
 	p = 0;
 	si = 0;
 	i = 0;
+	if (s[0] == '\0')
+		return (s);
 	while (s[si] != '\0')
 		si++;
 	s2 = (char **)ft_calloc(sizeof(char *) * word_count(s, c));

@@ -6,15 +6,15 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:58:00 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 16:58:00 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 15:38:17 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha( char c )
+int	ft_isalpha( int c )
 {
-	if (c > 64 && c < 91)
+	if (c >= 'A' && c <= 'Z')
 		return (1);
-	else if (c > 96 && c < 123)
+	else if (c >= 'a' && c <= 'z')
 		return (1);
 	return (0);
 }

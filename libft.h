@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/23 16:22:59 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 16:05:41 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,30 @@
 
 #ifndef	libft
 #define	libft
+
+/*Missing functions: , memchr, strnstr, itoa, strmapi, striteri, 
+					putchar_fd, putstr_fd, putendl_fd, putnbr_fd
+*/
+
+char	*ft_strstr(const char *haystack, const char *needle);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+char	*strdup(const char *str);
+
+void	*ft_calloc(size_t num_elements, size_t size_of_element);
+
+int		atoi(const char *s);
+
+int		strncmp(const char *s1, const char *s2, size_t n);
+
+char	*strchr(const char *s, int c);
+
+char	*ft_strjoin(char const *s1, char const *s2);
+
+char	**ft_split(char const *s, char c);
+
+char	*ft_strtrim(char const *s1, char const *set);
 
 void	*ft_memcpy(void *dst, const void *src, size_t num);
 

@@ -6,13 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:58:13 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 16:58:13 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 15:37:55 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
-	if (c > 47 && c < 58)
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

@@ -6,9 +6,11 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:03:43 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 17:03:49 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 14:05:17 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 char	*strchr(const char *s, int c)
 {

@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:58:24 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 17:17:28 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 15:34:34 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t num)
 {
-	unsigned char	*ptr;
 	const unsigned char	*s;
-	size_t	i;
+	unsigned char		*ptr;
+	size_t				i;
 
 	i = 0;
 	s = (const unsigned char *)src;

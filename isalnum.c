@@ -6,17 +6,17 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:52 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 16:57:53 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 15:38:36 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
-	if (c > 47 && c < 58)
+	if (c >= '0' && c <= '9')
 		return (1);
-	if (c > 64 && c < 91)
+	if (c >= 'a' && c <= 'z')
 		return (1);
-	if (c > 96 && c < 122)
+	if (c >= 'A' && c <= 'Z')
 		return (1);
 	return (0);
 }

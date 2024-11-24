@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:58:50 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 16:58:51 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 15:54:40 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *str)
 	size_t	i;
 
 	i = 0;
-	if (str == NULL)
+	if (str[0] == '\0')
 		return (0);
 	while (str[i] != '\0')
 		i++;

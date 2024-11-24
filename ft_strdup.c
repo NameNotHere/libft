@@ -6,19 +6,21 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:06 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/23 16:22:54 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 15:54:44 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *strdup(const char *str)
+#include <stdlib.h>
+
+char	*strdup(const char *str)
 {
-	int size;
-	char *dup;
+	int		size;
+	char	*dup;
 
 	size = 0;
 	while (str[size] != '\0')
 		size++;
-	dup = malloc(sizeof(char)*(size + 1));
+	dup = malloc(sizeof(char) * (size + 1));
 	if (dup == NULL)
 		return (NULL);
 	size = 0;
@@ -28,5 +30,5 @@ char *strdup(const char *str)
 		size++;
 	}
 	dup[size] = '\0';
-	return	(dup);
+	return (dup);
 }

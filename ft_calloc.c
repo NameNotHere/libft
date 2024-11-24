@@ -6,14 +6,15 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:56:45 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/23 16:22:50 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 15:30:08 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
+// char **ft_split(char const *s, char c)
 void	*ft_calloc(size_t num_elements, size_t size_of_element)
-{ // char **ft_split(char const *s, char c)
+{
 	unsigned char	*c;
 	size_t			i;
 

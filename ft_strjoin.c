@@ -6,9 +6,21 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 11:39:39 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/22 11:54:13 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 16:14:41 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
+
+int	len(const char *s)
+{
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -16,13 +28,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	int		j;
 
-	i = 0;
-	j = 0;
-	while (s1[i] != '\0')
-		i++;
-	while (s2[j] != '\0')
-		j++;
-	new = (unsigned char *) malloc(j + i + 1);
+	i = len(s1);
+	j = len(s2);
+	new = (char *) malloc(j + i + 1);
+	if (!new)
+		return (NULL);
 	i = 0;
 	j = 0;
 	while (s1[i] != '\0')
@@ -35,6 +45,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		new[i + j] = s2[j];
 		j++;
 	}
-	new[i] = '\0';
+	new[i + j] = '\0';
 	return (new);
 }
