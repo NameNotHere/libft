@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 18:53:40 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/25 19:35:10 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+void	*ft_memchr(const void *s, int c, size_t n);
 
 char	*ft_itoa(int n);
 
