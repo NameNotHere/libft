@@ -6,13 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:11 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 14:08:43 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/25 14:06:49 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-int	strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 

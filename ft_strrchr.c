@@ -6,11 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:21 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 16:57:22 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:20:47 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strchr(const char *s, int c)
+#include <stddef.h>
+
+char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 

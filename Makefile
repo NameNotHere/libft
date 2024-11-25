@@ -6,7 +6,7 @@
 #    By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/21 17:16:14 by otanovic          #+#    #+#              #
-#    Updated: 2024/11/24 17:04:50 by otanovic         ###   ########.fr        #
+#    Updated: 2024/11/25 15:44:04 by otanovic         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@
 #
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRC = ft_atoi.c ft_calloc.c ft_memcmp.c ft_strchr.c bzero.c isalnum.c \
+SRC = ft_atoi.c ft_calloc.c ft_memcmp.c ft_strrchr.c ft_strchr.c bzero.c isalnum.c \
 		isalpha.c isascii.c isdigit.c isprint.c memcpy.c memmove.c memset.c \
 		strlcat.c strlcpy.c strlen.c bzero.c ft_strdup.c ft_strncmp.c ft_strstr.c ft_tolower.c \
 		ft_toupper.c ft_strjoin.c ft_split.c ft_strtrimMAKE.c memcpy.c ft_substr.c

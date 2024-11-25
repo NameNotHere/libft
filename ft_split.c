@@ -6,13 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 15:16:08 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 19:04:08 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:10:45 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <libft.h>
-/*
+
 static int	word_count(char const *s, char c)
 {
 	int	count;
@@ -85,67 +85,6 @@ char c
 		}
 		i++;
 	}
-	s2[si] == NULL;
+	s2[si] = NULL;
 	return (s2);
-}*/
-/*char **ft_split(char const *s, char c)
-{
-    char **s2;
-    int i = 0;
-    int si = 0;
-    int word_len = 0;
-    int p = 0;
-
-    // Check for NULL input or empty string
-    if (!s || s[0] == '\0')
-        return NULL;
-
-    // Allocate memory for the array of strings (words)
-    s2 = (char **)malloc(sizeof(char *) * (word_count(s, c) + 1));
-    if (!s2)
-        return NULL;
-
-    while (s[i])
-    {
-        // Skip the delimiters
-        if (s[i] == c)
-        {
-            i++;
-            continue;
-        }
-
-        // Count the length of the current word
-        word_len = 0;
-        while (s[i + word_len] && s[i + word_len] != c)
-            word_len++;
-
-        // Allocate memory for the word
-        s2[si] = (char *)malloc(sizeof(char) * (word_len + 1));
-        if (!s2[si])
-        {
-            // Handle memory allocation failure
-            while (si > 0)
-                free(s2[--si]);
-            free(s2);
-            return NULL;
-        }
-
-        // Copy the word into the allocated space
-        p = 0;
-        while (p < word_len)
-        {
-            s2[si][p] = s[i + p];
-            p++;
-        }
-        s2[si][p] = '\0';  // Null-terminate the word
-
-        // Move to the next word
-        i += word_len;
-        si++;
-    }
-
-    // Null-terminate the array of words
-    s2[si] = NULL;
-
-    return s2;
-}*/
+}
