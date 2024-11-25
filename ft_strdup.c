@@ -6,13 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:06 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 15:54:44 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 17:09:39 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*strdup(const char *str)
+char	*ft_strdup(const char *str)
 {
 	int		size;
 	char	*dup;

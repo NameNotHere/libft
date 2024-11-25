@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:49:36 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 15:34:30 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 18:40:49 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t num)
 	size_t			i;
 
 	if (dest == src || num == 0)
-	{
 		return (dest);
-	}
 	s = (unsigned char *)src;
 	d = (unsigned char *)dest;
 	i = num;

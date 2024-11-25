@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 16:05:41 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 17:38:13 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 /*Missing functions: , memchr, strnstr, itoa, strmapi, striteri, 
 					putchar_fd, putstr_fd, putendl_fd, putnbr_fd
 */
+
+char	*ft_strdup(const char *str);
 
 char	*ft_strstr(const char *haystack, const char *needle);
 

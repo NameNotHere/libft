@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:56:45 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 15:30:08 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 17:46:00 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_calloc(size_t num_elements, size_t size_of_element)
 	size_t			i;
 
 	i = 0;
-	if (num_elements == 0 || size_of_element == 0)
-		return (NULL);
 	c = (unsigned char *)malloc(num_elements * size_of_element);
 	if (c == NULL)
 		return (NULL);

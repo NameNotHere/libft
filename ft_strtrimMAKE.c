@@ -6,11 +6,11 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 12:43:52 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 15:30:37 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/24 18:45:15 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <stdlib.h>
 
 static int	is_in_set(char c, char const *set)
 {
@@ -49,7 +49,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	c = (char *) malloc(len + 1);
 	if (c == NULL)
 		return (NULL);
-	while (z < len)
+	while (z++ < len)
 		c[z] = s1[i + z];
 	c[z] = '\0';
 	return (c);
