@@ -6,24 +6,22 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 15:20:43 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/25 18:53:40 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-#ifndef	libft
-#define	libft
+#ifndef LIBFT_H
+# define LIBFT_H
 
-/*Missing functions: , memchr, strnstr, itoa, strmapi, striteri, 
-					putchar_fd, putstr_fd, putendl_fd, putnbr_fd
-*/
+char	*ft_itoa(int n);
 
 char	*ft_strdup(const char *str);
 
 char	*ft_strrchr(const char *s, int c);
 
-char	*ft_strstr(const char *haystack, const char *needle);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 

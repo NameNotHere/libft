@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:56:38 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 16:07:54 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/25 19:02:27 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,23 +21,20 @@ int	ft_atoi(const char *s)
 	sign = 1;
 	i = 0;
 	num = 0;
-	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'
-		|| s[i] == '\v' || s[i] == '\f' || s[i] == '\r' )
+	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == '\v'
+		|| s[i] == '\f' || s[i] == '\r')
 	{
 		i++;
 	}
 	if (s[i] == '+' || s[i] == '-')
 	{
 		if (s[i] == '-')
-		{
-			sign = -sign;
-		}
+			sign = -1;
 		i++;
 	}
-	while ((s[i] >= '0' && s[i] <= '9'))
+	while (s[i] >= '0' && s[i] <= '9')
 	{
-		if (num > INT_MAX / 10
-			|| (num == INT_MAX / 10 && s[i] - '0' > INT_MAX % 10))
+		if (num > (INT_MAX - (s[i] - '0')) / 10)
 		{
 			if (sign == 1)
 				return (INT_MAX);

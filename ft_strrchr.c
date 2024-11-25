@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:21 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 15:20:47 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/25 17:35:03 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,13 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
 		i++;
 	}
-	if (s[i] == (char)c)
-		return ((char *)(s + i));
+	while (i >= 0)
+	{
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
+		i--;
+	}
 	return (NULL);
 }
