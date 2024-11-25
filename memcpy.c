@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:58:24 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 14:06:56 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/25 16:15:32 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,11 @@ void	*ft_memcpy(void *dst, const void *src, size_t num)
 	unsigned char		*ptr;
 	size_t				i;
 
+	if (dst == NULL && src == NULL && num != 0)
+		return ((unsigned char *) dst);
 	i = 0;
 	s = (const unsigned char *)src;
 	ptr = (unsigned char *) dst;
-	if (dst == NULL)
-		return (NULL);
-	if (num == 0 || src == NULL)
-		return (dst);
 	while (i < num)
 	{
 		ptr[i] = s[i];
