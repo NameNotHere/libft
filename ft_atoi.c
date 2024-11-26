@@ -6,11 +6,31 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:56:38 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 19:02:27 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/26 15:57:25 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
+
+int	signs_and_spaces(const char *s, int i)
+{
+	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == '\v'
+		|| s[i] == '\f' || s[i] == '\r')
+	{
+		i++;
+	}
+	return (i);
+}
+
+void	handle_sign(const char *s, int *i, int *sign)
+{
+	if (s[*i] == '+' || s[*i] == '-')
+	{
+		if (s[*i] == '-')
+			*sign = -1;
+		(*i)++;
+	}
+}
 
 int	ft_atoi(const char *s)
 {
@@ -18,20 +38,11 @@ int	ft_atoi(const char *s)
 	int	num;
 	int	sign;
 
-	sign = 1;
 	i = 0;
 	num = 0;
-	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == '\v'
-		|| s[i] == '\f' || s[i] == '\r')
-	{
-		i++;
-	}
-	if (s[i] == '+' || s[i] == '-')
-	{
-		if (s[i] == '-')
-			sign = -1;
-		i++;
-	}
+	sign = 1;
+	i = signs_and_spaces(s, i);
+	handle_sign(s, &i, &sign);
 	while (s[i] >= '0' && s[i] <= '9')
 	{
 		if (num > (INT_MAX - (s[i] - '0')) / 10)

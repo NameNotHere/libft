@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:28 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 19:10:51 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/26 16:15:15 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	len_needle = ft_strlen(needle);
 	if (needle[0] == '\0')
 		return ((char *) haystack);
-	while (haystack[i] != '\0')// && ft_strlen(haystack) > len_needle)
+	while (haystack[i] != '\0')
 	{
 		j = 0;
 		while (haystack[i + j] == needle[j] && needle[j] != '\0' && i + j < len)

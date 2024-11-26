@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:55:11 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 14:03:56 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/26 16:14:43 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,30 @@ static int	get_num_len(int n)
 	return (len);
 }
 
+void	checkneg(int *num, char *str)
+{
+	if (*num == INT_MIN)
+	{
+		str[0] = '-';
+		str[1] = '2';
+		*num = 147483648;
+	}
+	else
+	{
+		str[0] = '-';
+		*num = -*num;
+	}
+}
+
 char	*ft_itoa(int n)
 {
 	char	*str;
 	int		len;
-	long	num;
+	int		num;
+	int		*p;
 
 	num = n;
+	p = &num;
 	len = get_num_len(num);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
@@ -42,17 +59,7 @@ char	*ft_itoa(int n)
 	str[len] = '\0';
 	if (num < 0)
 	{
-		if (num == INT_MIN)
-		{
-			str[0] = '-';
-			str[1] = '2';
-			num = INT_MAX;
-		}
-		else
-		{
-			str[0] = '-';
-			num = -num;
-		}
+		checkneg(p, str);
 	}
 	while (num > 0)
 	{
