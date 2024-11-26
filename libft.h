@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 14:50:45 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/26 15:16:45 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+void	ft_putnbr_fd(int n, int fd);
+
+void	ft_putendl_fd(char *s, int fd);
+
+void	ft_putstr_fd(char *s, int fd);
 
 void	ft_putchar_fd(char c, int fd);
 
