@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/25 19:31:57 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 19:36:22 by otanovic         ###   ########.fr       */
+/*   Created: 2024/11/26 12:30:28 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/26 13:18:53 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <stdlib.h>
+#include <libft.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned char	*ptr;
-	unsigned char	target;
+	char	*s2;
+	int		i;
 
-	ptr = (unsigned char *)s;
-	target = (unsigned char)c;
-	while (n--)
+	i = 0;
+	s2 = (char *) malloc(ft_strlen(s) + 1);
+	if (!s2)
+		return (NULL);
+	while (s[i] != '\0')
 	{
-		if (*ptr == target)
-			return (ptr);
-		ptr++;
+		s2[i] = f(i, s[i]);
+		i++;
 	}
-	return (NULL);
+	s2[i] = '\0';
+	return (s2);
 }

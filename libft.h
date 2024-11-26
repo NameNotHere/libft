@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 19:35:10 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/26 12:37:47 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 void	*ft_memchr(const void *s, int c, size_t n);
 
