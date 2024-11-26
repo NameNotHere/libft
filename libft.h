@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 13:37:18 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/26 14:50:45 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+void	ft_putchar_fd(char c, int fd);
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
@@ -33,7 +35,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 char	*strdup(const char *str);
 
-void	*ft_calloc(size_t num_elements, size_t size_of_element);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 int		ft_atoi(const char *s);
 
