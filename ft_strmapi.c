@@ -6,12 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 12:30:28 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 13:20:21 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/27 13:27:20 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
-#include <libft.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

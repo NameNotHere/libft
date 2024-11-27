@@ -6,12 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 15:01:15 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 15:16:38 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/27 13:27:40 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <unistd.h>
-#include <libft.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {

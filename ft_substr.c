@@ -6,12 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:33 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 17:10:12 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/27 14:58:01 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
-#include <libft.h>
+#include <stdio.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

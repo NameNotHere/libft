@@ -6,12 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:28 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 16:15:15 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/27 14:38:06 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
-#include <libft.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
