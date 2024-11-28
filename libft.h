@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/28 16:03:57 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/28 17:07:26 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,8 @@ struct s_list
 	void	*content;
 	t_list	*next;
 };
+
+void ft_lstadd_back(t_list **lst, t_list *new);
 
 t_list	*ft_lstnew(void *content);
 
