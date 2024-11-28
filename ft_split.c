@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 12:53:14 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/28 13:43:48 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:08:12 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,17 @@ static char	*get_word(char const *s, char c, int *start)
 	return (word);
 }
 
+static char	**free_ar(char **newar)
+{
+	int	i;
+
+	i = 0;
+	while (newar[i] != NULL)
+		free(newar[i++]);
+	free(newar);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**newar;
@@ -77,6 +88,8 @@ char	**ft_split(char const *s, char c)
 		while (s[start] == c)
 			start++;
 		newar[i] = get_word(s, c, &start);
+		if (!newar[i])
+			return (free_ar(newar));
 		i++;
 	}
 	newar[i] = NULL;

@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/27 13:26:27 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:08:08 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-
-char	*strdup(const char *str);
 
 void	*ft_calloc(size_t nmemb, size_t size);
 
@@ -86,5 +84,14 @@ int		ft_isascii(char c);
 int		ft_isdigit(char c);
 
 int		ft_isprint(int c);
+
+// BONUS SECTION
+
+typedef struct s_list	t_list;
+struct s_list
+{
+	void	*content;
+	t_list	*next;
+};
 
 #endif

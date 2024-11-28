@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 12:43:52 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/27 14:58:02 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/28 14:41:53 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,13 @@ int	get_trim_bounds(char const *s1, char const *set, int *i, int *j)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*s;
 	int		i;
 	int		j;
-	int		c;
 
-	j = get_trim_bounds(s1, set, &i, &j);
-	c = ft_strlen(s1);
-	s = (char *) malloc((j - i + 1) * sizeof(char));
 	if (!s1)
 		return (NULL);
 	if (!set)
 		return ((char *) s1);
-	s = ft_substr(s1, i, (j - i));
-	return (s);
+	j = get_trim_bounds(s1, set, &i, &j);
+	return (ft_substr(s1, i, (j - i)));
 }
