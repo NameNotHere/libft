@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/28 15:46:53 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/28 16:03:57 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,9 @@ struct s_list
 t_list	*ft_lstnew(void *content);
 
 void ft_lstadd_front(t_list **lst, t_list *new);
+
+int ft_lstsize(t_list *lst);
+
+t_list	*ft_lstlast(t_list *lst);
 
 #endif
