@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/28 15:08:08 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/28 15:46:53 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,13 +85,15 @@ int		ft_isdigit(char c);
 
 int		ft_isprint(int c);
 
-// BONUS SECTION
-
 typedef struct s_list	t_list;
 struct s_list
 {
 	void	*content;
 	t_list	*next;
 };
+
+t_list	*ft_lstnew(void *content);
+
+void ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif
