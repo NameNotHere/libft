@@ -6,11 +6,10 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 12:53:14 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/27 15:00:18 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/28 13:43:48 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include <stdlib.h>
 #include <libft.h>
 
@@ -35,7 +34,51 @@ static int	word_count(char const *s, char c)
 	return (count);
 }
 
+static char	*get_word(char const *s, char c, int *start)
+{
+	int		len;
+	char	*word;
+	int		i;
+
+	len = 0;
+	while (s[*start + len] && s[*start + len] != c)
+		len++;
+	word = malloc(sizeof(char) * (len + 1));
+	if (!word)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
+		word[i] = s[*start + i];
+		i++;
+	}
+	word[i] = '\0';
+	*start += len;
+	return (word);
+}
+
 char	**ft_split(char const *s, char c)
 {
+	char	**newar;
+	int		wc;
+	int		i;
+	int		start;
+
+	start = 0;
+	i = 0;
+	wc = word_count(s, c);
+	newar = malloc(sizeof(char *) * (wc + 1));
+	if (!newar || !s)
+		return (NULL);
+	while (s[start] == c)
+		start++;
+	while (i < wc)
+	{
+		while (s[start] == c)
+			start++;
+		newar[i] = get_word(s, c, &start);
+		i++;
+	}
+	newar[i] = NULL;
+	return (newar);
 }
-*/

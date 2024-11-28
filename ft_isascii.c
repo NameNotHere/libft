@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlen.c                                           :+:      :+:    :+:   */
+/*   isascii.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/21 16:58:50 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 15:17:28 by otanovic         ###   ########.fr       */
+/*   Created: 2024/11/21 16:58:07 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/28 13:39:52 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-size_t	ft_strlen(const char *str)
+int	ft_isascii(int c)
 {
-	size_t	i;
-
-	i = 0;
-	if (str[0] == '\0')
-		return (0);
-	while (str[i] != '\0')
-		i++;
-	return (i);
+	if (c >= 0 && c < 128)
+		return (1);
+	return (0);
 }

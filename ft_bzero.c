@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isascii.c                                          :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/21 16:58:07 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 16:58:07 by otanovic         ###   ########.fr       */
+/*   Created: 2024/11/21 16:56:28 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/28 13:45:00 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+#include <stddef.h>
+
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= 0 && c < 128)
-		return (1);
-	return (0);
+	unsigned char	*ptr;
+	size_t			i;
+
+	i = 0;
+	ptr = (unsigned char *) s;
+	while (i < n)
+	{
+		ptr[i] = '\0';
+		i++;
+	}
 }

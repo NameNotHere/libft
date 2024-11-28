@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bzero.c                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/21 16:56:28 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/21 17:17:34 by otanovic         ###   ########.fr       */
+/*   Created: 2024/11/21 16:58:50 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/28 13:43:57 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	ft_bzero(void *s, size_t n)
+size_t	ft_strlen(const char *str)
 {
-	unsigned char	*ptr;
-	size_t			i;
+	size_t	i;
 
 	i = 0;
-	ptr = (unsigned char *) s;
-	while (i < n)
-	{
-		ptr[i] = '\0';
+	if (str[0] == '\0')
+		return (0);
+	while (str[i] != '\0')
 		i++;
-	}
+	return (i);
 }
