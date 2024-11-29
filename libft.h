@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/28 17:07:26 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/29 13:15:48 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,13 +92,17 @@ struct s_list
 	t_list	*next;
 };
 
-void ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstclear(t_list **lst, void (*del)(void*));
+
+void	ft_lstdelone(t_list *lst, void (*del)(void*));
+
+void	ft_lstadd_back(t_list **lst, t_list *new);
 
 t_list	*ft_lstnew(void *content);
 
-void ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
-int ft_lstsize(t_list *lst);
+int		ft_lstsize(t_list *lst);
 
 t_list	*ft_lstlast(t_list *lst);
 
