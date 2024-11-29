@@ -6,13 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 15:47:46 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/28 15:54:46 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/29 16:00:07 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	i;
 

@@ -6,14 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:21:52 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/28 17:00:47 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/29 15:59:54 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <libft.h>
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*rui;
 
@@ -26,7 +25,6 @@ void ft_lstadd_back(t_list **lst, t_list *new)
 	else
 	{
 		rui = *lst;
-
 		while (rui->next != NULL)
 			rui = rui->next;
 		rui->next = new;

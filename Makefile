@@ -6,12 +6,12 @@
 #    By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/21 17:16:14 by otanovic          #+#    #+#              #
-#    Updated: 2024/11/29 14:17:36 by otanovic         ###   ########.fr        #
+#    Updated: 2024/11/29 16:50:48 by otanovic         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 SRC = ft_atoi.c ft_calloc.c ft_memcmp.c ft_strrchr.c ft_strchr.c ft_bzero.c ft_isalnum.c \
 		ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memcpy.c ft_memmove.c ft_memset.c \
 		ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_bzero.c ft_strdup.c ft_strncmp.c ft_strnstr.c ft_tolower.c \
@@ -38,7 +38,7 @@ bonus: $(NAME) $(BONUSOBJ)
 	$(CC) $(CFLAGS) -c $< -o $@ -I .
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUSOBJ)
 
 fclean: clean
 	rm -f $(NAME)
