@@ -6,7 +6,7 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:13:27 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/29 15:59:19 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:40:24 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,13 +75,13 @@ void	ft_bzero(void *s, size_t n);
 
 void	*ft_memmove(void *dest, const void *src, size_t num);
 
-int		ft_isalnum(char c);
+int		ft_isalnum(int c);
 
-int		ft_isalpha( char c );
+int		ft_isalpha( int c );
 
-int		ft_isascii(char c);
+int		ft_isascii(int c);
 
-int		ft_isdigit(char c);
+int		ft_isdigit(int c);
 
 int		ft_isprint(int c);
 

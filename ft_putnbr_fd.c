@@ -6,12 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 15:04:45 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 15:16:36 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:27:35 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <limits.h>
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

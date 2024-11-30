@@ -6,9 +6,11 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:40 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 15:26:54 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:26:10 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

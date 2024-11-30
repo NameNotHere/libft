@@ -1,22 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_strlcpy copy.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/28 15:39:11 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/30 16:32:06 by otanovic         ###   ########.fr       */
+/*   Created: 2024/11/21 16:58:45 by otanovic          #+#    #+#             */
+/*   Updated: 2024/11/30 16:32:28 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include <stddef.h>
+#include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	if (lst && new)
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	j = 0;
+	while (src[i] != '\0')
 	{
-		new->next = *lst;
-		*lst = new;
+		i++;
 	}
+	if (size == 0)
+		return (i);
+	while (src[j] != '\0' && j < (size - 1))
+	{
+		dst[j] = src[j];
+		j++;
+	}
+	dst[j] = '\0';
+	return (i);
 }

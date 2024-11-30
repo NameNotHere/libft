@@ -6,11 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:56:38 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 15:57:25 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:28:45 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
+#include "libft.h"
 
 int	signs_and_spaces(const char *s, int i)
 {

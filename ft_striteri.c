@@ -6,9 +6,11 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 13:20:43 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 13:37:14 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:27:19 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

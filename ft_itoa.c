@@ -6,12 +6,13 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:55:11 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 16:14:43 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:28:12 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <limits.h>
+#include "libft.h"
 
 static int	get_num_len(int n)
 {

@@ -6,11 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 11:39:39 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 16:14:41 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:27:16 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
 int	len(const char *s)
 {

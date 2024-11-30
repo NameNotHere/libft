@@ -6,11 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 14:46:00 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/26 15:16:41 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:27:41 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

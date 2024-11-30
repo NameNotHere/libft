@@ -6,11 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:56:51 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/24 15:34:32 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:27:53 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

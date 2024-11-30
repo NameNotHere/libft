@@ -6,11 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:21 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/25 17:35:03 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/11/30 16:26:50 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
