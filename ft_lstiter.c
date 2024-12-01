@@ -6,11 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 13:49:20 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/29 14:17:39 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/12/01 11:16:43 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
+#include <stddef.h>
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {

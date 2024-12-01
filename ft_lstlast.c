@@ -6,11 +6,11 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 15:55:17 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/30 16:32:10 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/12/01 11:21:12 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 t_list	*ft_lstlast(t_list *lst)
 {

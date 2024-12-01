@@ -6,12 +6,12 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 12:53:14 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/30 16:32:22 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/12/01 11:17:35 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <libft.h>
+#include "libft.h"
 
 static int	word_count(char const *s, char c)
 {
