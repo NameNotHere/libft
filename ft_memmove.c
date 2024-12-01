@@ -6,11 +6,10 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:49:36 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/30 16:27:46 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/12/01 11:26:09 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include <stdio.h>
 #include "libft.h"
 

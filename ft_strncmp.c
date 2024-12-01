@@ -6,11 +6,10 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:57:11 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/30 16:26:57 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/12/01 11:25:10 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

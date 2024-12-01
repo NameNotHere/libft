@@ -6,11 +6,10 @@
 /*   By: otanovic <otanovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:58:45 by otanovic          #+#    #+#             */
-/*   Updated: 2024/11/30 16:27:06 by otanovic         ###   ########.fr       */
+/*   Updated: 2024/12/01 11:25:22 by otanovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
