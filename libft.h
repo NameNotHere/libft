@@ -110,4 +110,8 @@ int		ft_lstsize(t_list *lst);
 
 t_list	*ft_lstlast(t_list *lst);
 
+int		ft_isspace(char c);
+
+int ft_isoperator(char *token, int i);
+
 #endif
