@@ -1,7 +1,7 @@
 
 #include "libft.h"
 
-int ft_minishellop(char *token, int i) {
+int ft_isminioperator(char *token, int i) {
 	if (!token)
 		return 0;
 
@@ -15,7 +15,13 @@ int ft_minishellop(char *token, int i) {
 		return 1;
 	if (ft_strncmp(token + i, "|", 1) == 0)
 		return 1;
-	// if (ft_strncmp(token + i, ".", 1) == 0)
-	// 	return 1;
+	if (ft_strncmp(token + i, "(", 1) == 0)
+		return 1;
+	if (ft_strncmp(token + i, ")", 1) == 0)
+		return 1;
+	if (ft_strncmp(token + i, "&", 1) == 0)
+		return 1;
+	if (ft_strncmp(token + i, ";", 1) == 0)
+		return 1;
 	return 0;
 }
